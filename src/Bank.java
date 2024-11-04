@@ -3,7 +3,6 @@ public class Bank {
         switch (transactionType) {
             case 1:
                 double balanceAfterWithdrawal = amount - balance;
-                balanceAfterWithdrawal = balance - amount;
                 if (balanceAfterWithdrawal < 0) {
                     System.out.println("Insufficient Balance\nBalance: " + balance);
                     return balance;
