@@ -3,10 +3,10 @@ import java.util.UUID;
 abstract class Account {
     private final String id;
     private final String acc_number;
-    private final Person acc_holder;
+    private final String acc_holder;
     private double balance;
 
-    public Account(Person acc_holder, String acc_number) {
+    public Account(String acc_holder, String acc_number) {
         this.id = UUID.randomUUID().toString();
         this.acc_holder = acc_holder;
         this.acc_number = acc_number;
@@ -21,7 +21,7 @@ abstract class Account {
         this.balance = balance;
     }
 
-    public Person getAcc_holder() {
+    public String getAcc_holder() {
         return acc_holder;
     }
 
